@@ -1,0 +1,217 @@
+
+
+    /*Desafio 1: Cartão de Perfil*/
+    #perfil-usuario {
+      background-color: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    #perfil-usuario .nome {
+      color: #1e293b;
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    #perfil-usuario .cargo {
+      color: #64748b;
+      font-style: italic;
+    }
+
+    /*Desafio 2: Formulário Box*/
+    .formulario-box {
+      width: 400px;
+      padding: 24px;
+      border: 2px solid #3b82f6;
+      border-radius: 8px;
+    }/*Desafio 2: Reset Global */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f1f5f9;
+      color: #334155;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    .container-exercicio {
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .container-exercicio > h2 {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /*Desafio 3: Header Navbar Flexbox */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f8fafc;
+      padding: 16px 24px;
+      border-radius: 8px;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      color: #1e293b;
+      font-size: 18px;
+    }
+
+    .navbar .menu {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .navbar .menu a {
+      text-decoration: none;
+      color: #475569;
+      font-weight: 500;
+    }
+
+    /*Desafio 4: Card de Notícia com Badge Flutuante*/    .card-noticia {
+      position: relative;
+      background-color: #f8fafc;
+      padding: 45px 20px 20px 20px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .card-noticia .tag-categoria {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #3b82f6;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+
+    /*Desafio 5: Botão Interativo*/
+    .btn-enviar {
+      background-color: #10b981;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-enviar:hover {
+      background-color: #059669;
+      transform: translateY(-2px);
+    }
+
+    .btn-enviar:focus {
+      outline: 2px solid #3b82f6;
+    }
+
+    .btn-enviar::before {
+      content: "🚀 ";
+    }
+
+    /*Desafio 6: Card de Serviço com Elevação 3D*/
+    .card-servico {
+      background-color: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      border: 1px solid #f1f5f9;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 280px;
+    }
+
+    .card-servico:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+    }
+
+    /*Desafio 7: Avatar Circular de Usuário*/
+    .user-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #6366f1;
+      display: block;
+    }
+
+    /*Desafio 8: Pricing Card*/
+    .pricing-card.destaque {
+      width: 300px;
+      background-color: #ffffff;
+      border: 2px solid #6366f1;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .pricing-card .plano {
+      color: #6366f1;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .pricing-card .preco {
+      font-size: 32px;
+      font-weight: bold;
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+
+    .pricing-card .recursos {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card .recursos li {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+
+    .pricing-card .btn-assinar {
+      width: 100%;
+      background-color: #6366f1;
+      color: #ffffff;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .pricing-card .btn-assinar:hover {
+      background-color: #4f46e5;
+    }

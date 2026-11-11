@@ -1,0 +1,58 @@
+
+
+.tabela-custom {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabela-custom caption{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.tabela-custom thead tr {
+    background-color: #2c3e50;
+    color: #ffff;
+    text-align: left;
+}
+
+.tabela-custom th {
+    padding: 12px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.tabela-custom td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #555; 
+}
+
+.tabela-custom tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.tabela-custom tbody tr:hover {
+    background-color: #f8f9fa;
+    transition : background-color 0.2s ease-in-out;
+}
+
+.tabela-custom tfoot tr {
+    font-weight: bold;
+    background-color: #f1f3f5;
+    color: #333;
+}
+
+.tabela-custom tfoot td {
+    border-top: 2px solid #2c3e50;
+}

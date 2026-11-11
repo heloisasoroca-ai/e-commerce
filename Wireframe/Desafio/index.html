@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas de Rendimento e Frequência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="cabecalho">
+        <div class="logo" aria-label="Logo da escola"><span></span></div>
+        <button class="botao-menu" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        <label class="busca"><img class="icone icone-busca" src="icones/busca.svg" alt=""><input type="search" placeholder="Procurar por Nome ou RA do aluno..."></label>
+        <div class="acoes-cabecalho">
+            <div class="notificacao" aria-label="3 notificações"><img class="icone sino" src="icones/sino.svg" alt=""><b>3</b></div>
+            <div class="perfil" role="img" aria-label="Perfil do usuário"><img class="icone" src="icones/perfil.svg" alt=""></div>
+        </div>
+    </header>
+    <div class="pagina">
+   
+        <aside class="menu-lateral">
+            <nav aria-label="Navegação principal">
+                <a href="#"><img class="icone icone-menu" src="icones/inicio.svg" alt="">Início</a>
+                <a href="#"><img class="icone icone-menu" src="icones/turmas.svg" alt="">Minhas Turmas</a>
+                <a href="#"><img class="icone icone-menu" src="icones/diario.svg" alt=""><span>Diário de Classe /<br>Frequência</span></a>
+                <a class="selecionado" href="#"><img class="icone icone-menu" src="icones/alerta.svg" alt="">Alertas de Reprovação</a>
+                <a href="#"><img class="icone icone-menu" src="icones/configuracoes.svg" alt="">Configurações</a>
+            </nav>
+        </aside>
+   
+        <main class="conteudo">
+            <div class="titulo">    
+                <h1>Alertas de Rendimento e Frequência</h1>
+                <p>Acompanhamento de alunos com risco de reprovação no semestre atual.</p>
+            </div>
+            <section class="filtros" aria-label="Filtros de alunos">
+                <select class="filtro-turma" aria-label="Selecionar turma">
+                    <option>Selecionar Turma (Todas)</option>
+                </select>
+                <select class="filtro-disciplina" aria-label="Selecionar disciplina">
+                    <option>Disciplina</option>
+                </select>
+                <select class="filtro-motivo" aria-label="Selecionar motivo do risco">
+                    <option>Motivo do Risco (Faltas, Notas, Ambos)</option>
+                </select>
+                <button class="botao-exportar"><img class="icone" src="icones/baixar.svg" alt=""> Exportar CSV</button>
+            </section>
+            <section class="resumo" aria-label="Resumo de riscos">
+                <article class="cartao alto">
+                    <h2><span></span>Risco Alto (Ambos)</h2><strong>8 <small>alunos</small></strong>
+                    <p>Nota abaixo da média e faltas acima de<br>20%.</p>
+                </article>
+                <article class="cartao nota">
+                    <h2><span></span>Risco por Nota</h2><strong>12 <small>alunos</small></strong>
+                    <p>Média atual abaixo de 6.0.</p>
+                </article>
+                <article class="cartao frequencia">
+                    <h2><span></span>Risco por Frequência</h2><strong>5 <small>alunos</small></strong>
+                    <p>Próximos do limite de 25% de<br>ausência.</p>
+                </article>
+            </section>
+            <section class="area-tabela">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>RA <img class="icone icone-seta" src="icones/seta.svg" alt=""></th>
+                            <th>Nome do Aluno <img class="icone icone-seta" src="icones/seta.svg" alt=""></th>
+                            <th>% Frequência <img class="icone icone-seta" src="icones/seta.svg" alt=""></th>
+                            <th>Média Atual <img class="icone icone-seta" src="icones/seta.svg" alt=""></th>
+                            <th>Situação</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="coluna-ra">18293</td>
+                            <td class="coluna-nome">Ana Carolina Silva</td>
+                            <td class="coluna-frequencia"><b>72%</b> <em class="critico">(Crítico)</em></td>
+                            <td class="coluna-media">5.5</td>
+                            <td class="coluna-situacao"><span class="situacao situacao-alta"><span class="ponto" aria-hidden="true"></span>Risco Alto</span></td>
+                            <td><button>Ver Histórico</button><button>Notificar</button></td>
+                        </tr>
+                        <tr>
+                            <td class="coluna-ra">18294</td>
+                            <td class="coluna-nome">Bruno Costa</td>
+                            <td class="coluna-frequencia">88% <em>(Estável)</em></td>
+                            <td class="coluna-media"><b>4.0</b></td>
+                            <td class="coluna-situacao"><span class="situacao situacao-nota"><span class="ponto" aria-hidden="true"></span>Risco Nota</span></td>
+                            <td><button>Ver Histórico</button><button>Notificar</button></td>
+                        </tr>
+                        <tr>
+                            <td class="coluna-ra">18295</td>
+                            <td class="coluna-nome">Carlos Eduardo</td>
+                            <td class="coluna-frequencia"><b>68%</b> <em class="critico">(Crítico)</em></td>
+                            <td class="coluna-media">8.0</td>
+                            <td class="coluna-situacao"><span class="situacao situacao-falta"><span class="ponto" aria-hidden="true"></span>Risco Falta</span></td>
+                            <td><button>Ver Histórico</button><button>Notificar</button></td>
+                        </tr>
+                        <tr>
+                            <td class="coluna-ra">18296</td>
+                            <td class="coluna-nome">Daniela Souza</td>
+                            <td class="coluna-frequencia">76% <em>(Atenção)</em></td>
+                            <td class="coluna-media"><b>5.8</b></td>
+                            <td class="coluna-situacao"><span class="situacao situacao-alta"><span class="ponto" aria-hidden="true"></span>Risco Alto</span></td>
+                            <td><button>Ver Histórico</button><button>Notificar</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html> 

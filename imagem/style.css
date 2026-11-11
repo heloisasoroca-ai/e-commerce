@@ -1,0 +1,214 @@
+/*  Módulo 3 */
+.img-responsiva {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.box-fixo {
+  width: 200px;
+  height: 100px;
+  border: 2px solid #6366f1;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #0f172a;
+}
+
+.img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.img-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4f46e5;
+}
+
+.img-card-estilizado {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 16px; /* Cantos suavizados */
+    border: 2px solid #e2e8f0; /* Borda fina discreta */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);  /* Sombra 3D */
+}
+
+.img-aspecto {
+    width: 100%;
+    max-width: 400px;
+    object-fit:cover;
+    border-radius: 12px;
+    aspect-ratio: 16 / 9; /* Proporção 16:9 */
+}
+
+/*  Módulo 4*/
+
+.img-grayscale {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%); /* Converte em tons de sinza */
+}
+
+/*  Ao passar o mouse, a cor original é restaurada! */
+.img-grayscale {
+    filter: grayscale(0%);
+}
+
+.img-sepia {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: sepia(100%); /* Efeito foto antiga/sépia */
+}
+
+.img-blur {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: blur(4px); /* Desfoca os pixels em 4px */
+    transition: filter 0.3s ease;
+}
+
+.img-blur {
+    filter: blur(0px); /* Remove o desfoque no hover */
+}
+
+
+.img-brilho {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: brightness(130%) contrast(120%); /* Aumenta o brilho e contraste */
+}
+
+.wrapper-zoom {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    overflow: hidden;/* OBRIGATÓRIO: esconde a imagem quando ela expande */
+}
+
+.img-zoom {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: tranform 0.4s ease;
+}
+
+.wrapper-zoom:hover .img-zoom {
+    transform: scale(1.15); /* Aumenta a imagem em 15% */
+}
+
+.img-rotacao {
+    width: 250px;
+    height: 170px;
+    object-fit:cover;
+    border-radius : 12px;
+    transition: tranform 0.3s ease; 
+}
+
+.img-rotacao:hover {
+    transform: rotate(5deg) scale(1.05); /* Inclina 5 graus e cresce 5% */
+}
+
+.card-composto {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border-radius : 16px; 
+    overflow: hidden;   
+}
+
+.img-composta {
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-composto:hover .img-composta {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.850), tranparent);
+    color: white;
+    display: flex;
+    flex-direction: colunm;
+    justify-content: flex-end;
+    padding: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card-composto:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Módulo 5 */
+
+.carrosel-snap {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 16px;
+}
+
+.item-snap {
+    flex: 0 0 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden; 
+}
+
+.item-snap img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;    
+}
+
+.legenda {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: tgba(15,23,42,0.8);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial, sans-serif';
+    color: #333;
+    margin: 90px;
+    padding: 30px;
+    display: grid;
+    justify-content:center;
+    border: 3px solid black;
+    max-width: 90%;
+}
+
+
+.text {
+    text-align: center;
+}
+
+.card header h2 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+    border-bottom: 3px solid  rgb(1, 1, 53);
+}
+
+.card img {
+    position: relative;
+    margin-bottom: 60px;
+    position: center;
+}
+
+figcaption {
+    font-size: 12px;
+    color:white;
+    padding: 8px;
+    background: #0b2545;
+    text-align: center;
+}
+
+.badge {
+    position: absolut;
+    top: 10px;
+    left: 10px;
+    color: white;
+    padding: 3px 8px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.intro {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.quote {
+
+    background-color: #f9f9f9;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 25px;
+}
+ .item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    margin: 0 0 5px 0;
+    color: #0b2545;
+    flex: 1;
+ }
+
+ .alert-box {
+    background: #fff9c4;
+    border: 1px solid #fbc02d;
+    padding: 12px;
+    font-size: 13px; 
+    margin-top: 20px;
+ }
+
+ .container-grid {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+ }
+
+
+ .image-box{
+    width: 100%;
+    height: auto;
+    display: block;
+ }
+
+
+ footer {
+    text-align: center;
+    font-size: 11px;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+ }
